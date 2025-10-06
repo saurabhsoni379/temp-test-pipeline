@@ -30,7 +30,8 @@ export class pipelineStack extends cdk.Stack {
 
 
     // ✅ Add Stage instead of Stack
-    pipeline.addStage(new PipelineCombineStack(this, `Dev-Stage`));
+    pipeline.addStage(new PipelineCombineStack(this, `Dev-Stage-new`));
+    // pipeline.addStage(new PipelineCombineStack(this, `Prod-Stage-new`));
 
   }
 }
