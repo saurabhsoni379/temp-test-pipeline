@@ -7,7 +7,6 @@ import { Construct } from 'constructs';
 export class QueueStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
-     const prefix="KuchBHi"
     // The code that defines your stack goes here
 
     // // example resource
