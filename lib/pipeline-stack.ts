@@ -28,7 +28,7 @@ export class pipelineStack extends cdk.Stack {
     });
 
     const stageConfig: StageConfig = {
-      stageName: StageName.sandbox,
+      stageName: StageName.development,
       regionalEnvironments: [
         {
           env: { account: '105052141415', region: 'us-west-2' },

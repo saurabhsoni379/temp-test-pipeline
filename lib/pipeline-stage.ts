@@ -56,9 +56,12 @@ export class PipelineStage extends Stage {
 
 export function getPipelineStage(scope: Construct, shortName: string, stageConfig: StageConfig , stageStackGenerator: StageStackGenerator, stackNameSuffix?: string): PipelineStage {
   let nameSuffix = `${stageConfig.stageName.toString()}`;
+
+  // option item
   if (stackNameSuffix) {
       nameSuffix = `${nameSuffix}-${stackNameSuffix}`;
   }
+
   const pipelineStage = new PipelineStage(
     scope,
     `${shortName}-${nameSuffix}`,
