@@ -67,7 +67,7 @@ export function getPipelineStage(scope: Construct, shortName: string, stageConfi
     `${shortName}-${nameSuffix}`,
     {
       nameSuffix,
-      stageName: nameSuffix,
+      stageName: "development-vchauhan",
       CRxStageName: stageConfig.stageName,
       stageStackGenerator,
     },
